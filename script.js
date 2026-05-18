@@ -1,5 +1,20 @@
 const form = document.getElementById('contactForm');
 const statusEl = document.getElementById('formStatus');
+const emailCopyButton = document.querySelector('[data-copy-email]');
+
+if (emailCopyButton) {
+  emailCopyButton.addEventListener('click', async () => {
+    const email = emailCopyButton.getAttribute('data-copy-email') || 'thecrustmonster@gmail.com';
+    try {
+      await navigator.clipboard.writeText(email);
+      const oldText = emailCopyButton.textContent;
+      emailCopyButton.textContent = 'Email copied';
+      setTimeout(() => { emailCopyButton.textContent = oldText; }, 1800);
+    } catch (_) {
+      window.prompt('Copy email address:', email);
+    }
+  });
+}
 
 if (form) {
   form.addEventListener('submit', async function (event) {
@@ -19,7 +34,7 @@ if (form) {
     }
 
     try {
-      const response = await fetch(form.action, {
+      const response = await fetch('https://formspree.io/f/xeedqpqy', {
         method: 'POST',
         body: new FormData(form),
         headers: { 'Accept': 'application/json' }

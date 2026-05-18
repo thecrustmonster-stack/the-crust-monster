@@ -389,3 +389,69 @@ details p{font-size:.98rem;margin:12px 0 0}
   nav a:not(.nav-cta):not(.nav-icon){display:none;}
   .hero-logo-card{order:0;}
 }
+
+
+/* Final targeted fixes: keep Instagram icon visible, align logo, and use supplied cropped pizza image */
+nav{flex-wrap:nowrap;}
+.nav-icon.instagram-nav{
+  width:42px;
+  height:42px;
+  min-width:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--yellow);
+  background:#050505;
+  padding:0;
+  flex:0 0 42px;
+}
+.nav-icon.instagram-nav svg{
+  width:22px;
+  height:22px;
+  display:block;
+  fill:currentColor;
+}
+.nav-icon.instagram-nav:hover{
+  background:var(--yellow);
+  color:#000;
+}
+.hero-grid{align-items:start;}
+.hero-copy,.hero-logo-card{align-self:start;}
+.hero-logo-card{align-items:flex-start;padding-top:0;}
+.hero-logo-card img{width:auto;height:auto;max-width:min(640px,100%);object-fit:contain;aspect-ratio:auto;}
+.food-proof .main-photo img{object-position:center center;}
+@media(max-width:900px){
+  nav{display:flex;gap:10px;overflow-x:auto;padding-bottom:2px;}
+  nav a:not(.nav-cta):not(.nav-icon){display:none;}
+  .nav-icon.instagram-nav{display:inline-flex;}
+  .hero-logo-card{order:0;}
+}
+
+/* Mobile hero order fix: header/ticker, then logo, then text */
+@media (max-width: 900px){
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  .hero-logo-card{
+    order:-1 !important;
+    align-items:center;
+    justify-content:center;
+  }
+  .hero-copy{
+    order:1 !important;
+  }
+  .hero-logo-card img{
+    max-width:min(560px, 94vw);
+    height:auto;
+    object-fit:contain;
+  }
+}
+
+/* Formspree no-mailto fix */
+button.button.secondary.email-button{cursor:pointer;font:inherit;}
+.form-status{grid-column:1/-1;font-weight:800;margin:0;color:#000;}
+.form-status.success{color:#065f22;}
+.form-status.error{color:#8a0000;}

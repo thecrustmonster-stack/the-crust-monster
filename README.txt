@@ -1,24 +1,19 @@
-The Crust Monster website package - lean GitHub upload version
+The Crust Monster website package
 
-This is the same site, but with unused oversized image/icon files removed so GitHub's web uploader does not fail.
+Upload the contents of this folder to GitHub Pages.
 
-Upload the CONTENTS of this folder to GitHub, not this ZIP file.
+Included changes:
+- Instagram icon button in the top navigation, linked to https://www.instagram.com/thecrustmonster/
+- Contact form submits via Formspree endpoint https://formspree.io/f/xeedqpqy
+- WhatsApp button uses 07912 683377
+- Email shown as thecrustmonster@gmail.com
+- Main pizza image replaced with the cropped version supplied by the user
+- CNAME and .nojekyll included for GitHub Pages
 
-Included:
-- index.html
-- styles.css
-- script.js
-- robots.txt
-- sitemap.xml
-- CNAME
-- .nojekyll
-- assets/logo/crust-monster-logo.png
-- only the image files actually used by the live site
+Upload the contents of this folder, not the ZIP itself.
 
-Form:
-- Formspree endpoint: https://formspree.io/f/xeedqpqy
 
-Contact:
-- Email: thecrustmonster@gmail.com
-- WhatsApp: https://wa.me/447912683377
-- Instagram: https://www.instagram.com/thecrustmonster/
+Latest fix:
+- Contact form posts to Formspree endpoint https://formspree.io/f/xeedqpqy.
+- No mailto links remain in the site, so submitting the form should not open an email app.
+- WhatsApp button remains linked to https://wa.me/447912683377.
