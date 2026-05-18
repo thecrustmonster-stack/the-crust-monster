@@ -1,19 +1,16 @@
 The Crust Monster website package
 
-Upload the contents of this folder to GitHub Pages.
+Targeted update only:
+- Logo canvas cropped so the visible logo aligns with the top of the hero text.
+- Hero CSS keeps the logo proportional and top-aligned.
+- Formspree endpoint remains: https://formspree.io/f/xeedqpqy
+- WhatsApp remains: 07912 683377
+- Email remains: thecrustmonster@gmail.com
 
-Included changes:
-- Instagram icon button in the top navigation, linked to https://www.instagram.com/thecrustmonster/
-- Contact form submits via Formspree endpoint https://formspree.io/f/xeedqpqy
-- WhatsApp button uses 07912 683377
-- Email shown as thecrustmonster@gmail.com
-- Main pizza image replaced with the cropped version supplied by the user
-- CNAME and .nojekyll included for GitHub Pages
+Upload the contents of this folder to GitHub Pages, not the ZIP itself.
 
-Upload the contents of this folder, not the ZIP itself.
-
-
-Latest fix:
-- Contact form posts to Formspree endpoint https://formspree.io/f/xeedqpqy.
-- No mailto links remain in the site, so submitting the form should not open an email app.
-- WhatsApp button remains linked to https://wa.me/447912683377.
+Latest update:
+- Added personal pizza passion paragraph to story section.
+- Changed section pills to yellow fill with black text.
+- The Pizza section now uses assets/images/pizza-crust.jpg.
+- Scrolling image strip images link to Instagram; it remains manual/static, not a live Instagram feed.
