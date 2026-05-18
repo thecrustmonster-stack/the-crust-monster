@@ -261,3 +261,52 @@ details p{font-size:.98rem;margin:12px 0 0}
 @media(max-width:620px){
   .contact-form{grid-template-columns:1fr;padding:22px;border-radius:24px}
 }
+
+/* Header/ticker/hero refinements */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.ticker {
+  position: sticky;
+  top: 70px;
+  z-index: 90;
+  box-shadow: 0 6px 16px rgba(0,0,0,.35);
+}
+
+.hero {
+  padding-top: 54px;
+}
+
+.hero-logo-card img {
+  display: block;
+  width: auto;
+  max-width: min(680px, 100%);
+  height: auto;
+  max-height: 72vh;
+  object-fit: contain;
+  aspect-ratio: auto;
+}
+
+.hero-copy {
+  align-self: center;
+}
+
+.hero-lead {
+  font-size: clamp(1.18rem, 2vw, 1.42rem);
+  line-height: 1.5;
+}
+
+@media(max-width:900px){
+  .ticker { top: 70px; }
+  .hero-logo-card { order: -1; }
+  .hero-logo-card img { max-width: min(560px, 96vw); max-height: none; }
+}
