@@ -310,3 +310,82 @@ details p{font-size:.98rem;margin:12px 0 0}
   .hero-logo-card { order: -1; }
   .hero-logo-card img { max-width: min(560px, 96vw); max-height: none; }
 }
+
+/* Targeted updates: Instagram nav icon, form handling, hero alignment, header pills and pizza crop */
+.nav-icon.instagram-nav{
+  width:42px;
+  height:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--yellow);
+  background:rgba(255,210,26,.06);
+  padding:0;
+  flex:0 0 auto;
+}
+.nav-icon.instagram-nav svg{
+  width:22px;
+  height:22px;
+  display:block;
+  fill:currentColor;
+}
+.nav-icon.instagram-nav:hover{
+  background:var(--yellow);
+  color:#000;
+}
+
+/* Make section label pills match the black/yellow brand rather than the white/yellow filled look */
+.eyebrow{
+  background:#050505;
+  color:var(--yellow);
+  border:1px solid var(--line);
+}
+
+/* Align the hero logo with the top of the hero text and keep the logo proportional */
+.hero-grid{
+  align-items:start;
+}
+.hero-copy,
+.hero-logo-card{
+  align-self:start;
+}
+.hero-logo-card{
+  align-items:flex-start;
+  padding-top:0;
+}
+.hero-logo-card img{
+  width:auto;
+  height:auto;
+  max-width:min(640px,100%);
+  object-fit:contain;
+  aspect-ratio:auto;
+}
+
+/* Crop the main pizza image lower so the blue plate at the top is not prominent */
+.food-proof .main-photo img{
+  object-position:center 78%;
+}
+
+.form-status{
+  grid-column:1/-1;
+  margin:0;
+  font-weight:800;
+  color:#000;
+  text-transform:none;
+  letter-spacing:0;
+}
+.form-status.success{color:#064b18;}
+.form-status.error{color:#8a0000;}
+.contact-form button:disabled{
+  opacity:.7;
+  cursor:wait;
+}
+
+@media(max-width:900px){
+  .nav-icon.instagram-nav{display:inline-flex;}
+  nav{display:flex; gap:10px; overflow-x:auto; padding-bottom:2px;}
+  nav a:not(.nav-cta):not(.nav-icon){display:none;}
+  .hero-logo-card{order:0;}
+}

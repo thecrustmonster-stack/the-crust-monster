@@ -1,21 +1,24 @@
-The Crust Monster website package
+The Crust Monster website package - lean GitHub upload version
 
-Upload the contents of this folder to GitHub Pages or any static web host.
+This is the same site, but with unused oversized image/icon files removed so GitHub's web uploader does not fail.
 
-Before publishing:
-1. Open index.html.
-2. Replace YOUR_EMAIL_HERE with your enquiry email address.
-3. Replace the canonical URL if your final domain differs from https://www.thecrustmonster.co.uk/
-4. If you add real customer/tagged images to "Crusts in the wild", get permission first.
+Upload the CONTENTS of this folder to GitHub, not this ZIP file.
 
-Instagram:
-https://www.instagram.com/thecrustmonster/
+Included:
+- index.html
+- styles.css
+- script.js
+- robots.txt
+- sitemap.xml
+- CNAME
+- .nojekyll
+- assets/logo/crust-monster-logo.png
+- only the image files actually used by the live site
 
+Form:
+- Formspree endpoint: https://formspree.io/f/xeedqpqy
 
-Area wording added: based near NN12 8RS and covering small private events within roughly a 45-minute drive.
-
-
-SEO notes:
-- Canonical URL, sitemap and robots.txt currently assume the final domain is https://www.thecrustmonster.co.uk/. Change these if you use a different domain.
-- After publishing, submit the sitemap in Google Search Console: https://www.thecrustmonster.co.uk/sitemap.xml
-- Keep image filenames and alt text descriptive when adding new photos.
+Contact:
+- Email: thecrustmonster@gmail.com
+- WhatsApp: https://wa.me/447912683377
+- Instagram: https://www.instagram.com/thecrustmonster/
